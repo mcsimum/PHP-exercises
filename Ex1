@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<header>
+
+</header>
+<body>
+<div>
+
+<form action="welcome.php" method="post">
+
+Name: <input type="text" name="fname">
+Age: <input type="text" name="age">
+City: <input type="text" name="city">
+<input type="submit">
+
+</form>
+
+Hi, my name is <?php echo $_POST["fname"]; ?> . 
+I am <?php echo $_POST["age"]; ?> years old.
+and I live in <?php echo $_POST["city"]; ?> .
+
+<?php
+echo "Please, fill all the fields.";
+?>
+
+</div>
+
+</body>
+
+</html>
